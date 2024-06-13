@@ -1,0 +1,13 @@
+---
+layout: default
+title: 岗位信息
+---
+<h1>招新岗位</h1>
+
+<ul>
+  {% for position in site.positions %}
+    <li>
+      <h2><a href="{{ position.url }}">{{ position.name }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
